@@ -4,6 +4,8 @@ The exam is divided in 2 main parts.
 - Simulate p-p and Pb-Pb collisions using Pythia, then analyse charged multiplicity and compare It to [HEP data](https://www.hepdata.net/record/ins1614477). As last step, look at p and $\pi$ transverse momentum distributions.
 - Simulate two calorimeters: one parallelepiped made of PbWO4 and another of NaI. Compare their performance with an EM shower.
 
+The results of the work I've done is summarized in the "overview.ipynb" notebook.
+
 ## Installation
 
 [Pythia](https://www.pythia.org) and [Geant4](https://geant4.web.cern.ch/download/11.1.1.html) are needed.
