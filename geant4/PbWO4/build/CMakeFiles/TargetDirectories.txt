@@ -1,0 +1,7 @@
+/data/dataalice/corso-programmazione-avanzata/geant4-v11.0.3/examples/students/czollo/PbWO4/build/CMakeFiles/install/strip.dir
+/data/dataalice/corso-programmazione-avanzata/geant4-v11.0.3/examples/students/czollo/PbWO4/build/CMakeFiles/install/local.dir
+/data/dataalice/corso-programmazione-avanzata/geant4-v11.0.3/examples/students/czollo/PbWO4/build/CMakeFiles/edit_cache.dir
+/data/dataalice/corso-programmazione-avanzata/geant4-v11.0.3/examples/students/czollo/PbWO4/build/CMakeFiles/exampleB4b.dir
+/data/dataalice/corso-programmazione-avanzata/geant4-v11.0.3/examples/students/czollo/PbWO4/build/CMakeFiles/rebuild_cache.dir
+/data/dataalice/corso-programmazione-avanzata/geant4-v11.0.3/examples/students/czollo/PbWO4/build/CMakeFiles/install.dir
+/data/dataalice/corso-programmazione-avanzata/geant4-v11.0.3/examples/students/czollo/PbWO4/build/CMakeFiles/list_install_components.dir
