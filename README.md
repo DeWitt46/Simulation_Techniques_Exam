@@ -76,7 +76,7 @@ cd ../build
 make
 ```
 Then you can call again the executable.
-You can also change the macro run, for example the energy of the beam or add a magnetic field inside the calorimeter.
+You can also change the macro run, for example the energy of the beam.
 
 ```C++
 /gun/energy 150 MeV
