@@ -1,6 +1,6 @@
 # Simulation Techniques Exam
 
-The exam is divided in 2 main objectives.
+The exam is divided in 2 main parts.
 - Simulate p-p and Pb-Pb collisions using Pythia, then analyse charged multiplicity and compare It to [HEP data](https://www.hepdata.net/record/ins1614477). As last step, look at p and $\pi$ transverse momentum distributions.
 - Simulate two calorimeters: one parallelepiped made of PbWO4 and another of NaI. Compare their performance with an EM shower.
 
