@@ -14,7 +14,7 @@ The two directories are independent one from each other.
 
 The Pythia folder contains two sub-folders.
 - "exam_data" contains data of the simulations I did and ROOT macro to plot the histograms;
-- "" contains all the code needed for the simulation of both p-p and Pb-Pb collisions.
+- "build" contains all the code needed for the simulation of both p-p and Pb-Pb collisions.
 - 
 The geant4 folder contains three sub-folders.
 - "exam_data" contains data of the simulations I did and ROOT macro to plot the histograms;
@@ -23,6 +23,31 @@ The geant4 folder contains three sub-folders.
 The last two are very very similar, since the only difference is the material.
 
 ## Usage
+
+### Collision
+
+The four collisions (p-p at 7 and 13.6 TeV and Pb-Pb at 5.02 and 5.4 TeV) share the same structure.
+Download the directories and go into /build, which contains the card file for all the runs and the executables of all the collisions.
+```bash
+cd ./pythia/build
+```
+
+```bash
+./exam_pp7TeV
+```
+The output will be a ROOT file called "pp7TeV.root" (or "pp13TeV.root" and so on).
+
+To change the card file you can edit It with gedit or something similar; the most interesting thing can be the processes activated:
+```C++
+SoftQCD:all = on
+```
+or
+```C++
+SoftQCD:inelastic = on
+```
+You don't have to compile the macro again, you can save and directly run the executable.
+
+### Calorimeter
 
 PbWO4 and NaI calorimeter share the same structure.
 Download the directories and go into /PbWO4 (or NaI) and then in /build, which contains the macro to run the EM shower and the executable.
@@ -34,6 +59,7 @@ cd ./geant4/PbWO4/build
 ./exampleB2b -m ExamRun.mac
 ```
 The output will be a ROOT file called "B4.root".
+
 To change the material or the geometry of the calorimeter you have to change the file DetectorConstruction.cc in the folder /src with an editor, like gedit.
 ```bash
 cd ./geant4/PbWO4/src
