@@ -1,0 +1,28 @@
+# Macro file for example B4
+# 
+# Can be run in batch, without graphic
+# or interactively: Idle> /control/execute ExamRun.mac
+#
+# Change the default number of workers (in multi-threading mode) 
+#/run/numberOfThreads 4
+#
+# Initialize kernel
+/run/initialize
+#
+# Magnetic field
+# 
+/globalField/setValue 0 0 0 tesla
+#
+# Activate/inactivate physics processes
+#
+/process/list
+/process/activate eBrem
+#
+# Default kinematics: 
+# electron 50 MeV in direction (0.,0.,1.)
+#
+/tracking/verbose 0
+/run/printProgress 10000
+/gun/energy 100 MeV
+/run/beamOn 30000
+#
