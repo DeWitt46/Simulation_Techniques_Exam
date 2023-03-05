@@ -10,7 +10,7 @@ The exam is divided in 2 main objectives.
 
 ## Description
 
-The two directories are independent one from the other.
+The two directories are independent one from each other.
 
 The Pythia folder contains two sub-folders.
 - "exam_data" contains data of the simulations I did and ROOT macro to plot the histograms;
