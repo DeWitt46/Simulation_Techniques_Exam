@@ -10,17 +10,19 @@ The exam is divided in 2 main parts.
 
 ## Description
 
-The two directories are independent one from each other.
+The three directories are independent one from each other.
 
-The Pythia folder contains two sub-folders.
+The Pythia directory contains two sub-folders.
 - "exam_data" contains data of the simulations I did and ROOT macro to plot the histograms;
 - "build" contains all the code needed for the simulation of both p-p and Pb-Pb collisions.
-- 
-The geant4 folder contains three sub-folders.
+
+The geant4 directory contains three sub-folders.
 - "exam_data" contains data of the simulations I did and ROOT macro to plot the histograms;
 - "PbWO4" contains all the code needed for the simulation of the PbWO4 calorimeter;
 - "NaI" contains all the code needed for the simulation of the NaI calorimeter.
 The last two are very very similar, since the only difference is the material.
+
+The img directory contains the plots produced.
 
 ## Usage
 
