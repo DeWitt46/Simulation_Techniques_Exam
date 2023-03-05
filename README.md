@@ -27,7 +27,7 @@ The last two are very very similar, since the only difference is the material.
 ### Collision
 
 The four collisions (p-p at 7 and 13.6 TeV and Pb-Pb at 5.02 and 5.4 TeV) share the same structure.
-Download the directories and go into /build, which contains the card file for all the runs and the executables of all the collisions.
+Download the directories and go into /build, which contains the card file "exam_settings.cmnd" for all the runs and the executables of all the collisions.
 ```bash
 cd ./pythia/build
 ```
