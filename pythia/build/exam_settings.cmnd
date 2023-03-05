@@ -1,0 +1,107 @@
+! Exam settings, each subrun is an experiment
+! This file contains commands to be read in for a Pythia8 run.
+! Lines not beginning with a letter or digit are comments.
+! Names are case-insensitive  -  but spellings-sensitive!
+! The settings here are illustrative, not always physics-motivated.
+
+Main:subrun = 0						! p-p at 7 TeV
+# 1) Settings used in main program
+Main:numberOfEvents = 1000000			
+Main:timesAllowErrors = 3			! how many aborts before run stops
+Parallelism:numThreads = 0			! threads used for parallelism
+# 2) Settings related to output in init(), next() and stat().
+Init:showChangedSettings = on		! list changed settings
+Init:showChangedParticleData = off	! list changed particle data
+Next:numberCount = 10000			! print message every n events
+Next:numberShowInfo = 1				! print event information n times
+Next:numberShowProcess = 1			! print process record n times
+Next:numberShowEvent = 0			! print event record n times
+# 3) Beam parameter settings.
+Beams:idA = 2212					! first beam, p = 2212, pbar = -2212
+Beams:idB = 2212					! second beam, p = 2212, pbar = -2212
+Beams:eCM = 7000.					! CM energy of collision (GeV)
+# 4) Other settings.
+SoftQCD:all = on					! p-p is dominated by soft processes
+!SoftQCD:inelastic = on
+!SoftQCD:nonDiffractive = on
+!SoftQCD:centralDiffractive = on
+!SoftQCD:doubleDiffractive = on
+!SoftQCD:elastic = on
+
+
+Main:subrun = 1						! p-p at 13.6 TeV
+# 1) Settings used in main program
+Main:numberOfEvents = 1000000			
+Main:timesAllowErrors = 3			! how many aborts before run stops
+Parallelism:numThreads = 0			! threads used for parallelism
+# 2) Settings related to output in init(), next() and stat().
+Init:showChangedSettings = on		! list changed settings
+Init:showChangedParticleData = off	! list changed particle data
+Next:numberCount = 10000			! print message every n events
+Next:numberShowInfo = 1				! print event information n times
+Next:numberShowProcess = 1			! print process record n times
+Next:numberShowEvent = 0			! print event record n times
+# 3) Beam parameter settings.
+Beams:idA = 2212					! first beam, p = 2212, pbar = -2212
+Beams:idB = 2212					! second beam, p = 2212, pbar = -2212
+Beams:eCM = 13600.					! CM energy of collision (GeV)
+# 4) Other settings.
+SoftQCD:all = on					! p-p is dominated by soft processes
+
+
+
+Main:subrun = 2						! Pb-Pb at 5.02 TeV
+# 1) Settings used in main program
+Main:numberOfEvents = 10000			
+Main:timesAllowErrors = 3			! how many aborts before run stops
+Parallelism:numThreads = 0			! maximum degree of parallelism
+# 2) Settings related to output in init(), next() and stat().
+Init:showChangedSettings = on		! list changed settings
+Init:showChangedParticleData = off	! list changed particle data
+Next:numberCount = 1000				! print message every n events
+Next:numberShowInfo = 1				! print event information n times
+Next:numberShowProcess = 1			! print process record n times
+Next:numberShowEvent = 0			! print event record n times
+# 3) Beam parameter settings.
+Beams:idA = 1000822080				! first beam, Pb = 1000822080
+Beams:idB = 1000822080				! second beam, Pb = 1000822080
+Beams:eCM = 5020.					! CM energy of collision (GeV)
+Beams:frameType = 1
+# 4) Other settings.
+SoftQCD:all = on					! MPI processes
+!HardQCD:all = on					! switch on all QCD jet + jet processes					
+!PhaseSpace:pTHatMin = 20.			! must set pTMin for HardQCD
+HeavyIon:mode = 2					! this forces HeavyIons model even for pp collisons.
+HeavyIon:SigFitNGen = 5			! N generations in the fitting to cross sections.
+HeavyIon:SigFitErr = 0.02,0.02,0.1,0.05,0.05,0.0,0.1,0.0
+HeavyIon:SigFitDefPar = 17.24,2.15,0.33,0.0,0.0,0.0,0.0,0.0
+! Initialize Angantyr model to fit the total and semi-inclusive cross sections in Pythia within some tolerance. These parameters are typically suitable for 5 TeV
+
+
+
+Main:subrun = 3						! Pb-Pb at 5.4 TeV
+# 1) Settings used in main program
+Main:numberOfEvents = 10000			
+Main:timesAllowErrors = 3			! how many aborts before run stops
+Parallelism:numThreads = 0			! maximum degree of parallelism
+# 2) Settings related to output in init(), next() and stat().
+Init:showChangedSettings = on		! list changed settings
+Init:showChangedParticleData = off	! list changed particle data
+Next:numberCount = 1000				! print message every n events
+Next:numberShowInfo = 1				! print event information n times
+Next:numberShowProcess = 1			! print process record n times
+Next:numberShowEvent = 0			! print event record n times
+# 3) Beam parameter settings.
+Beams:idA = 1000822080				! first beam, Pb = 1000822080
+Beams:idB = 1000822080				! second beam, Pb = 1000822080
+Beams:eCM = 5400.					! CM energy of collision (GeV)
+Beams:frameType = 1
+# 4) Other settings.
+SoftQCD:all = on					! MPI processes
+!HardQCD:all = on					! switch on all QCD jet + jet processes					
+!PhaseSpace:pTHatMin = 20.			! must set pTMin for HardQCD
+HeavyIon:mode = 2					! this forces HeavyIons model even for pp collisons.
+HeavyIon:SigFitNGen = 5			! N generations in the fitting to cross sections.
+HeavyIon:SigFitErr = 0.02,0.02,0.1,0.05,0.05,0.0,0.1,0.0
+HeavyIon:SigFitDefPar = 17.24,2.15,0.33,0.0,0.0,0.0,0.0,0.0
+! Initialize Angantyr model to fit the total and semi-inclusive cross sections in Pythia within some tolerance. These parameters are typically suitable for 5 TeV
